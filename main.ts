@@ -20,8 +20,3 @@ basic.pause(100)
 basic.showNumber(radioFreq)
 radio.setGroup(radioFreq)
 
-
-input.onButtonPressed(Button.A, function() {
-    
-    radio.sendNumber(1)
-})
