@@ -1,5 +1,7 @@
 let radioFreq: number
 radioFreq = 0
+
+
 while (true) {
     basic.showNumber(radioFreq)
     if (input.buttonIsPressed(Button.B)){
@@ -17,3 +19,9 @@ basic.clearScreen()
 basic.pause(100)
 basic.showNumber(radioFreq)
 radio.setGroup(radioFreq)
+
+
+input.onButtonPressed(Button.A, function() {
+    
+    radio.sendNumber(1)
+})
