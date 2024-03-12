@@ -1,2 +1,4 @@
-
-led.plot(0, 0)
+input.onSound(DetectedSound.Loud, function() {
+    
+    basic.showNumber(input.soundLevel())
+})
