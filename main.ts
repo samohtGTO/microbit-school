@@ -33,7 +33,7 @@ basic.forever(function() {
     basic.showNumber(tar)
 
     if( tar>0){
-
+        radio.sendValue("punten", tar)
         PCA9685.setServoPosition(PCA9685.ServoNum.Servo1, 180, 64)
         basic.pause(100)
         tar=0
